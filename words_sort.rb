@@ -10,11 +10,11 @@ value1 = nil
 value2 = nil
 
 while more < words.length
-    words.each do |word|
+    0.upto(words.length-1) do |word_ix|
       if num1 < (words.length - 1)
         if value1 != 'reset'
           value2 = value1
-          value1 = word
+          value1 = words[word_ix]
             if value2 != nil and value1 != nil and value1 != value2
               if value2 > value1
                 words[num1] = value1
@@ -28,7 +28,7 @@ while more < words.length
               end
             end
         else
-          value1 = word
+          value1 = words[word_ix]
         end
           num1 += 1
           num2 += 1
