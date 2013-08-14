@@ -37,7 +37,6 @@ while more < words.length
     words = words
     num1 = -1
     num2 = 0
-    word = nil
     value1 = 'reset'
     value2 = 'reset'
     more = more + 1
