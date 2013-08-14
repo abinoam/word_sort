@@ -9,7 +9,6 @@ while more < 1
     0.upto(words.length-2) do |word_ix|
         prev_word = words[word_ix]
         next_word = words[word_ix+1]
-            if prev_word and next_word and next_word != prev_word
               if prev_word > next_word
                 words[word_ix] = next_word
                 words[word_ix+1] = prev_word
@@ -20,7 +19,6 @@ while more < 1
                 #so I don't over write any of the old values
                 break
               end
-            end
     end
     more += 1
 end
