@@ -22,23 +22,23 @@ while more < words.length
                 #Here, I skip over the rest of the each loop and do the
                 #while loop again
                 #so I don't over write any of the old values
-                num1 = num1 + words.length
+                num1 += words.length
                 # reducing the more because we need an extra iteration
-                more = more - 1
+                more -= 1
               end
             end
         else
           value1 = word
         end
-          num1 = num1 + 1
-          num2 = num2 + 1
+          num1 += 1
+          num2 += 1
       end
     end
     num1 = -1
     num2 = 0
     value1 = 'reset'
     value2 = 'reset'
-    more = more + 1
+    more += 1
 end
 
 puts
