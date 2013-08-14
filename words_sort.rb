@@ -7,7 +7,7 @@ more = 0
 next_word = nil
 prev_word = nil
 
-while more < words.length
+while more < 1
     0.upto(words.length-1) do |word_ix|
         prev_word = next_word
         next_word = words[word_ix]
