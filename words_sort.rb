@@ -19,12 +19,13 @@ while more < words.length
               if prev_word > next_word
                 words[lower_ix] = next_word
                 words[higher_ix] = prev_word
+                # reducing the more because we need an extra iteration
+                more -= 1
                 #Here, I skip over the rest of the each loop and do the
                 #while loop again
                 #so I don't over write any of the old values
                 lower_ix += words.length
-                # reducing the more because we need an extra iteration
-                more -= 1
+
               end
             end
         else
