@@ -1,8 +1,6 @@
 words = []
 
-while words.last != ''
-    words.push gets.chomp
-end
+words.push gets.chomp while words.last != ''
 
 words.pop
 num1 = -1
