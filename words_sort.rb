@@ -1,9 +1,7 @@
 words = []
-endProg = nil
 
-while endProg != ''
+while words.last != ''
     words.push gets.chomp
-    endProg = words.last
 end
 
 words.pop
