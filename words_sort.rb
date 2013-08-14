@@ -34,7 +34,6 @@ while more < words.length
           num2 = num2 + 1
       end
     end
-    words = words
     num1 = -1
     num2 = 0
     value1 = 'reset'
