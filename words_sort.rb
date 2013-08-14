@@ -3,9 +3,8 @@ words = []
 words.push gets.chomp while words.last != ''
 
 words.pop
-more = true
 
-while more
+begin
   more = false
   0.upto(words.length-2) do |word_ix|
     prev_word = words[word_ix]
@@ -17,7 +16,7 @@ while more
       more = true
     end
   end
-end
+end while more
 
 puts
 puts words
