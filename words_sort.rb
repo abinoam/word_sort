@@ -15,7 +15,7 @@ while more < words.length
         if value1 != 'reset'
           value2 = value1
           value1 = words[word_ix]
-            if value2 != nil and value1 != nil and value1 != value2
+            if value2 and value1 and value1 != value2
               if value2 > value1
                 words[num1] = value1
                 words[num2] = value2
